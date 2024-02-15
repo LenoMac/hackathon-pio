@@ -1,0 +1,54 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  margin-top: 30px;
+
+  h1 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    width: 800px;
+    text-align: center;
+  }
+  .input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    input {
+      width: 400px;
+      background: white;
+      padding: 8px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.699);
+      border-radius: 6px;
+      outline: none;
+      color: black;
+      font-size: 1.1rem;
+      font-weight: 500;
+      font-family: "Poppins", sans-serif;
+      transition: 0.5s;
+      ::placeholder {
+        font-family: "Poppins", sans-serif;
+      }
+      &:focus {
+        border: 1px solid #7b7aff;
+        outline: 4px solid #7a7aff4d;
+      }
+    }
+    .search {
+      color: #4945ff;
+      font-size: 28px;
+      cursor: pointer;
+    }
+  }
+
+  .block_list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    justify-content: space-between;
+  }
+}
